@@ -116,30 +116,29 @@ public class Main {
         return possibleFish instanceof Fish;
     }
 
-    /*
-    int bal = x.balance();
-    if(bal <= 1.0{
-        System.out.println("Paid Off");
-     }
-    else{
-        System.out.println(bal);
-    }
-     */
 
-    /*
+//    double bal = x.balance();
+//    if(bal <= 1.0{
+//        System.out.println("Paid Off");
+//     }
+//    else{
+//        bal = bal.toString();
+//        System.out.printf("%.2f%n", bal);
+//    }
 
-    private static void tempController(){
-        while(true) {
-            if (thermo.getTemp <= 72.0) {
-                thermo.turnOnHeat();
-            }
-            else if(thermo.getTemp >= 76.0){
-                thermo.turnOnAc();
-            }
-        }
-    }
 
-     */
+//    private static void tempController(){
+//        while(true) {
+//            if (thermo.getTemp <= 72.0) {
+//                thermo.turnOnHeat();
+//            }
+//            else if(thermo.getTemp >= 76.0){
+//                thermo.turnOnAc();
+//            }
+//        }
+//    }
+
+
 
     public static void largerThanPi(double[] array){
         for(int i = 0; i < array.length; i++){
@@ -149,6 +148,37 @@ public class Main {
         }
     }
 
-    
+//    public static void getXactionValues(Xaction[] xactions){
+//        int sum = 0;
+//        for(Xaction i: xactions){
+//            if(i != null) {
+//                sum += xactions.getValue();
+//            }
+//        }
+//        System.out.println(sum);
+//    }
+
+//    public static void getXactionValues(Xaction[] xactions){
+//        ArrayList<Xaction> newArray = new ArrayList<Xaction>();
+//        for(int i = xactions.length - 1; i >= 0; i--){
+//            newArray.add(xactions[i]);
+//        }
+//    }
+
+    public static void fiveTable(){
+        StringBuilder table = new StringBuilder();
+        for(int i = 1; i <= 5; i++){  // Start from 1 so we don't have a column of 0s
+            for(int j = 1; j <= 5; j++){
+                table.append(String.format("%3d %s", i * j, "|"));
+            }
+            table.append("\n");
+        }
+        System.out.println(table);
+    }
+
+    public static void pythagoreanTheorm(){
+        double hypot = Math.sqrt((9 * 9) + (7 * 7));
+        System.out.println(hypot);
+    }
 }
 
