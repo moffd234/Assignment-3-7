@@ -116,6 +116,39 @@ public class Main {
         return possibleFish instanceof Fish;
     }
 
+    /*
+    int bal = x.balance();
+    if(bal <= 1.0{
+        System.out.println("Paid Off");
+     }
+    else{
+        System.out.println(bal);
+    }
+     */
+
+    /*
+
+    private static void tempController(){
+        while(true) {
+            if (thermo.getTemp <= 72.0) {
+                thermo.turnOnHeat();
+            }
+            else if(thermo.getTemp >= 76.0){
+                thermo.turnOnAc();
+            }
+        }
+    }
+
+     */
+
+    public static void largerThanPi(double[] array){
+        for(int i = 0; i < array.length; i++){
+            if(array[i] > Math.PI){
+                System.out.println(array[i] + " is greater than pi. Its index is " + i);
+            }
+        }
+    }
+
     
 }
 
