@@ -4,7 +4,6 @@ import java.util.concurrent.LinkedBlockingDeque;
 
 public class Main {
     public static void main(String[] args){
-        exponentiate();
     }
 
     public static void OneHundredToFive(){
@@ -93,7 +92,30 @@ public class Main {
     // TODO: Complete the below function
     public static void zeroOutThenMultiple(){}
 
-    public static void evenFalse(){
-        
+    public static void evenFalse(int[] intArray){
+        boolean[] boolArray = new boolean[intArray.length];
+        for(int i = 0; i < intArray.length; i++){
+            if(!isOdd(intArray[i])){
+                boolArray[i] = true;
+            }
+            else{
+                boolArray[i] = false;
+            }
+        }
+        System.out.println(Arrays.toString(boolArray));
     }
+    private static boolean isOdd(int n){
+        return !((n % 2) == 0);
+    }
+
+    private static double power(double a, double b){
+        return Math.pow(a, b);
+    }
+
+    private static boolean isFish(Object possibleFish){
+        return possibleFish instanceof Fish;
+    }
+
+    
 }
+
