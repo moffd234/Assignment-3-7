@@ -4,7 +4,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 
 public class Main {
     public static void main(String[] args){
-        addFive();
+        exponentiate();
     }
 
     public static void OneHundredToFive(){
@@ -75,6 +75,25 @@ public class Main {
     }
 
     public static void divideByOnePointThree(){
-        int[] array = new int[]{};
+        double[] array = new double[]{0.5, 1.4, 6.7, 123.4 -34.6};
+        for(int i = 0; i < array.length; i++){
+            array[i] /= 1.3;
+        }
+    }
+
+    public static void exponentiate(){
+        double[] array = new double[] {1.3, 5.4, 6.1, 1.0, 9.2};
+        for(int i = 0; i < array.length; i++){
+            double newNum = (Math.pow(array[i], 3) - array[i]) / 3;
+            array[i] = newNum;
+        }
+        System.out.println(Arrays.toString(array));
+    }
+
+    // TODO: Complete the below function
+    public static void zeroOutThenMultiple(){}
+
+    public static void evenFalse(){
+        
     }
 }
